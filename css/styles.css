@@ -1,0 +1,12 @@
+p{
+  font-size: 20px;
+}
+.question{
+  margin-bottom: 30px;
+}
+
+#result {
+  font-size: 30px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
