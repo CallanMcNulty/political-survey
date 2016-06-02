@@ -7,7 +7,7 @@ $(document).ready(function() {
     for (var i=1; i<13; i++) {
       var num = i.toString();
       var v = parseInt($("input:radio[name="+num+"]:checked").val());
-      if(v) {
+      if(v || v === 0) {
         score += v;
       } else {
         completed = false;
@@ -16,6 +16,7 @@ $(document).ready(function() {
 
     var message = "";
     if(completed) {
+      $("#bar-block").show();
       if(score > 100) {
         message = "Seig Heil!";
       } else if (score > 80) {
@@ -34,7 +35,10 @@ $(document).ready(function() {
     } else {
       message = "Please complete the test.";
       $('h4').text("Test Failed:");
+      completed = true;
+      $("#bar-block").hide();
     }
+    $("#bar").css("width", (((score+92)/217)*100).toString()+"%" );
     $("#result").text(message);
     $("#myModal").modal("show");
   });
