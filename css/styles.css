@@ -1,6 +1,13 @@
 p{
   font-size: 20px;
+  height: 50px;
 }
+@media (max-width: 991px) {
+  p {
+    height: auto;
+  }
+}
+
 .question{
   margin-bottom: 30px;
 }
@@ -12,5 +19,40 @@ p{
 }
 
 #conservative-label {
+  float: right;
+}
+
+#liberal-label {
+  float: left;
+}
+
+.progress {
+  width: 100%;
+}
+
+body{
+  background-color: #8D9FC9;
+}
+
+.container{
+  margin-top: 30px;
+  background-color: white;
+  padding: 30px;
+}
+
+hr {
+  border-width: 2px;
+  border-color: #B8B8B8;
+}
+
+.red-text {
+  color: red;
+}
+
+#btns{
+  text-align: center;
+}
+
+#tally {
   float: right;
 }

@@ -3,6 +3,7 @@ $(document).ready(function() {
     event.preventDefault();
     var score = 0;
     var completed = true;
+    $(".red-text").removeClass("red-text");
 
     for (var i=1; i<13; i++) {
       var num = i.toString();
@@ -11,6 +12,7 @@ $(document).ready(function() {
         score += v;
       } else {
         completed = false;
+        $("input[name="+num+"]").parent().siblings("p").addClass("red-text");
       }
     }
 
@@ -33,7 +35,7 @@ $(document).ready(function() {
         message = "Greetings, comrade.";
       }
     } else {
-      message = "Please complete the test.";
+      message = "Please complete the highlighted questions.";
       $('h4').text("Test Failed:");
       completed = true;
       $("#bar-block").hide();
