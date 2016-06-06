@@ -311,7 +311,7 @@
         </div>
         <div class="center-block" id="btns">
           <button class="btn btn-primary btn-lg" type="submit">Submit Answers</button>
-          <button class="btn btn-lg" id="tally">See Tally</button>
+          <button class="btn btn-lg" id="tally" type="button" data-toggle="modal" data-target="#tallyModal">See Tally</button>
         <div>
       </form>
 
@@ -338,9 +338,35 @@
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="tallyModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title">Other Scores:</h4>
+            </div>
+            <div class="modal-body">
+              <ul>
+                <li><p>Very Conservative</p><p id="SH"></p></li>
+                <li><p>Conservative</p><p id="NRA"></p></li>
+                <li><p>Conservative Leaning</p><p id="RM"></p></li>
+                <li><p>Moderate</p><p id="YTA"></p></li>
+                <li><p>Liberal Leaning</p><p id="O"></p></li>
+                <li><p>Liberal</p><p id="FB"></p></li>
+                <li><p>Very Liberal</p><p id="GC"></p></li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </body>
 </html>

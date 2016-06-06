@@ -45,6 +45,13 @@ hr {
   border-color: #B8B8B8;
 }
 
+ul {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .red-text {
   color: red;
 }
