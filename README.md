@@ -1,4 +1,4 @@
-# Portfolio Landing Page for Callan McNulty
+# Political Survey
 
 #### A survey that calculates political affiliation - 2016
 
