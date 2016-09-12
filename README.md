@@ -2,7 +2,7 @@
 
 #### A survey that calculates political affiliation - 2016
 
-#### By Callan McNulty
+#### By Callan McNulty and Sami Al-Jamal
 
 ## Description
 
